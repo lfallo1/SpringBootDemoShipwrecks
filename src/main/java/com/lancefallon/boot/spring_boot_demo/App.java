@@ -8,6 +8,9 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
 @SpringBootApplication
 public class App extends SpringBootServletInitializer {
 	
+	/**
+	 * needed to properly package application as a war for deployment
+	 */
 	@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(App.class);
